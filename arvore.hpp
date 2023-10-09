@@ -126,6 +126,7 @@ void print_nivel(NoArvore* no, int nivel) {
     }
     return;
 }
+// Função auxiliar
 void percorre_niveis(NoArvore* no) {
     int altura = calculaAltura(no, 0);
     for (int i = 1; i <= altura; i++) {
