@@ -18,7 +18,7 @@ int main() {
     NoArvore* level_2_1 = new NoArvore { .dado = vetor[1], .esq = level_3_1, .dir = level_3_2 };
     NoArvore* level_1_1 = new NoArvore { .dado = vetor[0], .esq = level_2_1, .dir = level_2_2 };
     minha_arvore.raiz = level_1_1;
-/*
+
     printf("Soma folhas = %d \n", soma_folhas(minha_arvore.raiz, 0));
     printf("\nPos-ordem = \n");
     pos_ordem(minha_arvore.raiz);
@@ -26,11 +26,8 @@ int main() {
     em_ordem(minha_arvore.raiz);
     printf("\nPre-ordem = \n");
     pre_ordem(minha_arvore.raiz);
-    
-    printf("altura no 20: %d\n", calculaAltura(level_3_2, 0));       
+    printf("altura no raiz: %d\n", calculaAltura(minha_arvore.raiz, 0));
     percorre_niveis(minha_arvore.raiz);
     printf("Produto == %d ", produto_nos(minha_arvore.raiz, 1));
-
-    */
-    printf("Balanceamento == %d ", balanceamento_no(level_2_1));
+    printf("Balanceamento(raiz) == %d ", balanceamento_no(minha_arvore.raiz));
 }
